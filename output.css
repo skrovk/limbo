@@ -596,8 +596,8 @@ video {
   background-attachment: scroll;
 }
 
-.p-10 {
-  padding: 2.5rem;
+.p-8 {
+  padding: 2rem;
 }
 
 .pb-10 {
@@ -674,8 +674,8 @@ video {
 
 .gradient-background {
   background: hsla(184, 85%, 63%, 1);
-  background: url('images/background.png') left bottom -30px no-repeat, url('images/background-right.png') right bottom -30px no-repeat, linear-gradient(180deg, (184, 85%, 63%, 1) 0%, hsla(240, 46%, 76%, 1) 60%, hsla(319, 72%, 75%, 1) 100%) fixed;
-  background: url('images/background.png') left bottom -30px no-repeat, url('images/background-right.png') right bottom -30px no-repeat, -webkit-linear-gradient(270deg, hsla(184, 85%, 63%, 1) 0%, hsla(240, 46%, 76%, 1) 60%, hsla(319, 72%, 75%, 1) 100%) fixed;
+  background: url('images/background.png') left bottom -50px no-repeat, url('images/background-right.png') right bottom -50px no-repeat, linear-gradient(180deg, (184, 85%, 63%, 1) 0%, hsla(240, 46%, 76%, 1) 60%, hsla(319, 72%, 75%, 1) 100%) fixed;
+  background: url('images/background.png') left bottom -50px no-repeat, url('images/background-right.png') right bottom -50px no-repeat, -webkit-linear-gradient(270deg, hsla(184, 85%, 63%, 1) 0%, hsla(240, 46%, 76%, 1) 60%, hsla(319, 72%, 75%, 1) 100%) fixed;
   background-size: 700px, 700px, auto;
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4fe6f1", endColorstr="#a6a6de", GradientType=1 );
 }
