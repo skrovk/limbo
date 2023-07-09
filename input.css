@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "BACKTO1982";
+    src: url("./fonts/BACKTO1982.TTF");
+  }
+
+@font-face {
+    font-family: "ARCADECLASSIC";
+    src: url("./fonts/ARCADECLASSIC.TTF");
+}
+
+@keyframes fly {
+    25%   {transform: translate(0px, 10px);}
+    75%   {transform: translate(0px, -20px);}
+}
+
+.fly {
+    animation-duration: 3s;
+    animation-name: "fly";
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.gradient-background {
+    background: hsla(184, 85%, 63%, 1);
+    background: url('images/background.png') left bottom -30px no-repeat, url('images/background-right.png') right bottom -30px no-repeat, linear-gradient(180deg, (184, 85%, 63%, 1) 0%, hsla(240, 46%, 76%, 1) 60%, hsla(319, 72%, 75%, 1) 100%) fixed;
+    
+    background: url('images/background.png') left bottom -30px no-repeat, url('images/background-right.png') right bottom -30px no-repeat, -moz-linear-gradient(0deg, hsla(184, 85%, 63%, 1) 0%, hsla(240, 46%, 76%, 1) 60%, hsla(319, 72%, 75%, 1) 100%) fixed;
+    background: url('images/background.png') left bottom -30px no-repeat, url('images/background-right.png') right bottom -30px no-repeat, -webkit-linear-gradient(270deg, hsla(184, 85%, 63%, 1) 0%, hsla(240, 46%, 76%, 1) 60%, hsla(319, 72%, 75%, 1) 100%) fixed;
+    background-size: 700px, 700px, auto;
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4fe6f1", endColorstr="#a6a6de", GradientType=1 );
+}
+
+.header {
+    text-align: center;
+}
