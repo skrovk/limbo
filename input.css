@@ -1,39 +1,56 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-@font-face {
+@layer base {
+  @font-face {
     font-family: "BACKTO1982";
-    src: url("./fonts/BACKTO1982.TTF");
+    src: url("./fonts/BACKTO1982.TTF") format("truetype");
+    font-display: swap;
   }
 
-@font-face {
+  @font-face {
     font-family: "ARCADECLASSIC";
-    src: url("./fonts/ARCADECLASSIC.TTF");
+    src: url("./fonts/ARCADECLASSIC.TTF") format("truetype");
+    font-display: swap;
+  }
 }
 
-@keyframes fly {
-    25%   {transform: translate(0px, 10px);}
-    75%   {transform: translate(0px, -20px);}
-}
+@layer utilities {
+  .font-backto1982 {
+    font-family: "BACKTO1982", sans-serif;
+  }
 
-.fly {
+  .font-arcadeclassic {
+    font-family: "ARCADECLASSIC", sans-serif;
+  }
+
+  @keyframes fly {
+    25% {
+      transform: translate(0, 10px);
+    }
+    75% {
+      transform: translate(0, -20px);
+    }
+  }
+
+  .fly {
     animation-duration: 3s;
-    animation-name: "fly";
+    animation-name: fly;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-}
+  }
 
-.gradient-background {
-    background: hsla(184, 85%, 63%, 1);
-    background: url('images/background.png') left bottom -50px no-repeat, url('images/background-right.png') right bottom -50px no-repeat, linear-gradient(180deg, (184, 85%, 63%, 1) 0%, hsla(240, 46%, 76%, 1) 60%, hsla(319, 72%, 75%, 1) 100%) fixed;
-    
-    background: url('images/background.png') left bottom -50px no-repeat, url('images/background-right.png') right bottom -50px no-repeat, -moz-linear-gradient(0deg, hsla(184, 85%, 63%, 1) 0%, hsla(240, 46%, 76%, 1) 60%, hsla(319, 72%, 75%, 1) 100%) fixed;
-    background: url('images/background.png') left bottom -50px no-repeat, url('images/background-right.png') right bottom -50px no-repeat, -webkit-linear-gradient(270deg, hsla(184, 85%, 63%, 1) 0%, hsla(240, 46%, 76%, 1) 60%, hsla(319, 72%, 75%, 1) 100%) fixed;
+  .gradient-background {
+    background:
+      url('images/background.png') left bottom -50px no-repeat,
+      url('images/background-right.png') right bottom -50px no-repeat,
+      linear-gradient(180deg, hsla(184, 85%, 63%, 1) 0%, hsla(240, 46%, 76%, 1) 60%, hsla(319, 72%, 75%, 1) 100%) fixed;
     background-size: 700px, 700px, auto;
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4fe6f1", endColorstr="#a6a6de", GradientType=1 );
-}
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4fe6f1", endColorstr="#a6a6de", GradientType=1);
+  }
 
-.header {
+  .header {
     text-align: center;
+  }
 }

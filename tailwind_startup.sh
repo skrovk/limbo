@@ -1,2 +1,2 @@
 #! /bin/bash
-npx tailwindcss -i ./input.css -o ./output.css --watch
+npx tailwindcss -c ./tailwind.config.cjs -i ./input.css -o ./output.css --watch
