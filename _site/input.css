@@ -53,24 +53,6 @@
 
     background-image:
     linear-gradient(180deg,rgba(80, 230, 241, 1) 0%, rgba(151, 221, 222, 1) 12%, rgba(237, 145, 208, 1) 23%, rgba(232, 159, 56, 1) 48%, rgba(125, 79, 129, 1) 79%, rgba(52, 37, 89, 1) 100%);
-    /* linear-gradient(180deg,rgba(80, 230, 241, 1) 0%, rgba(151, 221, 222, 1) 12%, rgba(237, 145, 208, 1) 23%, rgba(232, 159, 56, 1) 48%, rgba(125, 79, 129, 1) 84%, rgba(62, 46, 105, 1) 100%); */
-    /* linear-gradient(180deg,rgba(80, 230, 241, 1) 0%, rgba(151, 221, 222, 1) 12%, rgba(237, 145, 208, 1) 23%, rgba(232, 159, 56, 1) 48%, rgba(125, 79, 129, 1) 74%, rgba(62, 46, 105, 1) 100%); */
-    /* linear-gradient(180deg,rgba(80, 230, 241, 1) 0%, rgba(151, 221, 222, 1) 13%, rgba(237, 145, 208, 1) 26%, rgba(232, 159, 56, 1) 42%, rgba(125, 79, 129, 1) 65%, rgba(62, 46, 105, 1) 100%); */
-    /* linear-gradient(180deg,rgba(80, 230, 241, 1) 0%, rgba(151, 221, 222, 1) 20%, rgba(237, 145, 208, 1) 33%, rgba(232, 159, 56, 1) 44%, rgba(125, 79, 129, 1) 60%, rgba(62, 46, 105, 1) 83%); */
-    /* linear-gradient(180deg,rgba(80, 230, 241, 1) 0%, rgba(151, 221, 222, 1) 20%, rgba(237, 145, 208, 1) 33%, rgba(232, 159, 56, 1) 41%, rgba(125, 79, 129, 1) 50%, rgba(48, 37, 87, 1) 64%); */
-    /* linear-gradient(180deg,rgba(80, 230, 241, 1) 0%, rgba(151, 221, 222, 1) 20%, rgba(237, 145, 208, 1) 33%, rgba(125, 79, 129, 1) 50%, rgba(36, 27, 66, 1) 64%); */
-    /* linear-gradient(
-      180deg,
-      #50e6f1 0%,
-      #a6a6de 60%,
-      #ed91d0 100%
-    ); */
-
-    /* background-repeat: no-repeat, no-repeat, no-repeat;
-    background-attachment: fixed, fixed, scroll;
-    background-position: left bottom, right bottom, center top;
-    --corner-size: clamp(80vh, 80vh, 420px);
-    background-size: var(--corner-size), var(--corner-size), 100% 300vh; */
   }
 
 .fade-image {
@@ -87,8 +69,8 @@
   position: fixed;
   bottom: 0;
   height: auto;
-  pointer-events: none; /* won’t block site content */
-  z-index: 2;           /* above overlay */
+  pointer-events: none;
+  z-index: 2;
 }
 
 .mountain.left {
@@ -117,17 +99,15 @@
 
   .topnav > a {
   display: flex;
-  align-items: center;      /* vertical centering for text */
+  align-items: center; 
   height: 100%;
 }
 
   .topnav-item {
-  /* float: left; */
   color: #a6a6de;
   font-family: arcadeclassic;
   text-align: center;
   padding: 0 16px;
-  /* padding-bottom: 10px; */
   text-decoration: none;
   font-size: 17px;
 
