@@ -1,0 +1,9 @@
+background: hsla(196, 73%, 90%, 1);
+
+background: linear-gradient(180deg, hsla(196, 73%, 90%, 1) 16%, hsla(210, 66%, 71%, 1) 40%, hsla(255, 48%, 71%, 1) 54%, hsla(289, 39%, 59%, 1) 69%, hsla(302, 27%, 50%, 1) 80%, hsla(338, 45%, 42%, 1) 92%, hsla(0, 64%, 30%, 1) 100%);
+
+background: -moz-linear-gradient(180deg, hsla(196, 73%, 90%, 1) 16%, hsla(210, 66%, 71%, 1) 40%, hsla(255, 48%, 71%, 1) 54%, hsla(289, 39%, 59%, 1) 69%, hsla(302, 27%, 50%, 1) 80%, hsla(338, 45%, 42%, 1) 92%, hsla(0, 64%, 30%, 1) 100%);
+
+background: -webkit-linear-gradient(180deg, hsla(196, 73%, 90%, 1) 16%, hsla(210, 66%, 71%, 1) 40%, hsla(255, 48%, 71%, 1) 54%, hsla(289, 39%, 59%, 1) 69%, hsla(302, 27%, 50%, 1) 80%, hsla(338, 45%, 42%, 1) 92%, hsla(0, 64%, 30%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D2EEF8", endColorstr="#85B5E6", GradientType=1 );
